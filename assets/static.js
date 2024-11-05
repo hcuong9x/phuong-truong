@@ -38,18 +38,20 @@ var renderCanvas1 = function () {
     ctx.font = "80px 'dancing_scriptregular', cursive";
     ctx.textBaseline = "middle";
     ctx.textAlign = "center";
+    ctx.fillStyle = "#ffffff";
     ctx.fillText(
       invitationInfo.groom_name_short +
         "  &  " +
         invitationInfo.bride_name_short,
       canvas.width / 2,
-      1820
+      1870
     );
     ctx.save();
 
     canvas.style.letterSpacing = "10px";
     ctx.font = "bold 48px 'comfortaaregular', cursive";
-    ctx.fillText(invitationInfo.event_date_dot, canvas.width / 2 + 28, 1935);
+    ctx.fillText(invitationInfo.event_date_dot, canvas.width / 2 + 28, 1975);
+    ctx.fillStyle = "#ffffff";
     ctx.save();
   };
 };
